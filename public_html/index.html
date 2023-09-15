@@ -11,8 +11,10 @@
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/eliki.css">
     <link rel="stylesheet" href="assets/css/eliki2.css">
+   
+ 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="turnLessOnLoad" >
 
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
@@ -386,8 +388,9 @@
                                 <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>In my Light Intensity Measurement project, I've employed an Arduino board and a light sensor to accurately measure ambient light levels. The real-time data is elegantly presented on an LCD display, making it user-friendly and practical.</p>
+                            <p>In my Light Intensity Measurement project, I've employed an Arduino board and a light sensor to accurately measure ambient light levels. <span id="dots1" class="dots">...</span><span id="more1" class="read">The real-time data is elegantly presented on an LCD display, making it user-friendly and practical.</span></p>
                             <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction1()" id="myBtn1" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -403,8 +406,8 @@
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
                             
-                           <p> My Arduino Light Sensor project uses an Arduino board and a light-dependent resistor (LDR) to detect and display ambient light levels LED display. This project demonstrates my skills in Arduino programming, sensor integration, and creative technology design. </p>
-                           
+                           <p> My Arduino Light Sensor project uses an Arduino board and a light-dependent resistor (LDR) to detect and display ambient light levels LED display.<span id="dots2" class="dots">...</span><span id="more2" class="read"> This project demonstrates my skills in Arduino programming, sensor integration, and creative technology design.</span> </p>
+                           <button onclick="myFunction2()" id="myBtn2" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -418,8 +421,9 @@
                                 <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>My Distance Measurement project utilizes an Arduino and an ultrasonic sensor to precisely measure distances in real-time. The project showcases my proficiency in sensor interfacing and data presentation, as it displays distance measurements on an LCD screen. Its demonstrating my skills in hardware integration and information visualization.</p>
+                            <p>My Distance Measurement project utilizes an Arduino and an ultrasonic sensor to precisely measure distances in real-time.<span id="dots3" class="dots">...</span><span id="more3" class="read"> The project showcases my proficiency in sensor interfacing and data presentation, as it displays distance measurements on an LCD screen. Its demonstrating my skills in hardware integration and information visualization.</span></p>
                             <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction3()" id="myBtn3" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -440,8 +444,9 @@
                                 <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>My Remote Controlled Car project is a testament to my passion for tinkering with technology. I've transformed a standard RC car into a customizable and versatile machine. By integrating an Arduino board and a wireless controller, I've given it a new dimension of control and interactivity. Whether it's maneuvering through obstacles or adding custom features like LED lights and camera systems, this project demonstrates my skills in electronics, coding, and creative engineering. </p>
+                            <p>My Remote Controlled Car project is a testament to my passion for tinkering with technology. I've transformed a standard RC car into a customizable and versatile machine.<span id="dots4" class="dots" >...</span><span id="more4" class="read"> By integrating an Arduino board and a wireless controller, I've given it a new dimension of control and interactivity. Whether it's maneuvering through obstacles or adding custom features like LED lights and camera systems, this project demonstrates my skills in electronics, coding, and creative engineering.</span> </p>
                             <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction4()" id="myBtn4" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -456,8 +461,9 @@
                                 <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>My LED Control with Remote project highlights the fusion of simplicity and innovation. Using an Arduino board and an infrared (IR) receiver, I've crafted a system that allows me to control LEDs wirelessly with a remote control. This project showcases my proficiency in microcontroller programming and circuitry, as I've created an interactive and visually captivating experience. The ability to customize LED patterns and colors using a remote control adds an element of fun and practicality. </p>
-                            <a href="javascript:void(0)">Read More..</a>
+                            <p>My LED Control with Remote project highlights the fusion of simplicity and innovation. Using an Arduino board and an infrared (IR) receiver, I've crafted a system that allows me to control LEDs wirelessly with a remote control.<span id="dots5"  class="dots">...</span><span id="more5" class="read"> This project showcases my proficiency in microcontroller programming and circuitry, as I've created an interactive and visually captivating experience. The ability to customize LED patterns and colors using a remote control adds an element of fun and practicality.</span> </p>
+                            <!-- <a href="myFunction5()">Read More..</a> -->
+                            <button onclick="myFunction5()" id="myBtn5" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -471,8 +477,9 @@
                                 <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
                                 <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>My Automatic Irrigation System with Arduino project is a solution that combines technology and sustainability. By employing an Arduino microcontroller, soil moisture sensors, and water pumps, I've created an automated watering system that ensures plants receive just the right amount of moisture, reducing water waste and promoting healthy growth.</p>
-                            <a href="javascript:void(0)">Read More..</a>
+                            <p>My Automatic Irrigation System with Arduino project is a solution that combines technology and sustainability.<span id="dots6" class="dots">...</span><span id="more6" class="read"> By employing an Arduino microcontroller, soil moisture sensors, and water pumps, I've created an automated watering system that ensures plants receive just the right amount of moisture, reducing water waste and promoting healthy growth.</span></p>
+                            <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction6()" id="myBtn6" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -585,6 +592,7 @@
 
     <!-- steller js -->
     <script src="assets/js/eliki.js"></script>
+    <script src="assets\js\readMore.js"></script>
 
 </body>
 </html>
