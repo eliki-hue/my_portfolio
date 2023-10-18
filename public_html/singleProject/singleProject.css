@@ -1,0 +1,68 @@
+.single-project-header{
+    background-color: #1DA1F2;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.project-info{
+    margin: 4-rem;
+    /* color: red; */
+    padding: 2rem;
+    border: none;
+    /* flex-wrap: wrap; */
+    --webkit-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+
+}
+.carousel-inner{
+    height: 100%;
+    /* width: 50vw; */
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    --webkit-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.1);
+
+}
+.slide{
+    height: 70vh;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel-inner img{
+    width:100%;
+    height: 100%;
+}
+.single-projectfooter{
+    background-color: #1DA1F2;
+    margin-top: 4rem;
+    margin-left: none;
+    padding: 4rem;
+
+}
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 2rem;
+}
+.carousel {
+    max-height: 600px;
+}
+.project-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
