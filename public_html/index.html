@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/eliki.css">
+    <link rel="stylesheet" href="assets/css/eliki2.css">
+   
+ 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="turnLessOnLoad" >
 
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
@@ -59,7 +62,8 @@
             <div class="infos">
                 <h6 class="subtitle">hello,I'm</h6>
                 <h6 class="title">Elijah Kiragu</h6>
-                <p>Software Developer</p>
+                <p>Software Developer <span>(Full-Stack)</span></p>
+                
 
                 <div class="buttons pt-3">
                     <button class="btn btn-primary rounded">HIRE ME</button>
@@ -257,7 +261,7 @@
                         <img src="assets/my images/portfolio/safiri.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Teckdata</h5>
+                                <h5>Safiri</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
                                 <a href="javascript:void(0)" target="_blank"><i class="ti-link" ></i></a>
                             </div>  
@@ -267,7 +271,7 @@
                         <img src="assets/my images/portfolio/newsapp.png" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Project Title</h5>
+                                <h5>Newsfinder-express</h5>
                                 <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
                                 <a href="https://news-finder-express-46f29b108e92.herokuapp.com/" target="_blank"><i class="ti-link"></i></a>
                             </div>                              
@@ -303,7 +307,7 @@
     <!-- End of portfolio section -->
 
     <!-- Testmonial Section -->
-    <!-- <section id="testmonial" class="section">
+    <section id="testmonial" class="section">
         <div class="container text-center">
             <h6 class="subtitle">Testmonial</h6>
             <h6 class="section-title mb-4">What People Say About Me</h6>
@@ -350,59 +354,135 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End of testmonial section -->
 
     <!-- Blog Section -->
     <section id="blog" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">My Blogs</h6>
-            <h6 class="section-title mb-4">Latest News</h6>
-            <p class="mb-5 pb-4">Beyond my passion for software development, I also have a deep fascination with the world of robotics, particularly using the Arduino platform. I find the fusion of hardware and software to create intelligent machines truly captivating. My hands-on experience in building robotic systems, from designing and programming autonomous robots to creating interactive IoT devices, has enriched my problem-solving skills and creativity. This diverse skill set allows me to bring a unique perspective to my projects, often leading to innovative solutions that bridge the gap between the digital and physical worlds. I believe that the future of technology lies in the synergy of software and hardware, and my proficiency in both areas positions me to contribute meaningfully to cutting-edge projects that blur the lines between the virtual and the tangible.</p>
+            <!-- <h6 class="subtitle">My Blogs</h6> -->
+            <h6 class="section-title mb-4">Other skills</h6>
+            <p class="mb-5 pb-4">Beyond my passion for software development, 
+                I also have a deep fascination with the world of robotics,
+                 particularly using the Arduino platform. I find the fusion of
+                 hardware and software to create intelligent machines truly captivating. 
+                 My hands-on experience in building robotic systems, from designing and 
+                 programming autonomous robots to creating interactive IoT devices, 
+                 has enriched my problem-solving skills and creativity. This diverse skill 
+                 set allows me to bring a unique perspective to my projects, often leading to 
+                 innovative solutions that bridge the gap between the digital and physical worlds. 
+                 I believe that the future of technology lies in the synergy of software and hardware, 
+                 and my proficiency in both areas positions me to contribute meaningfully 
+                 to cutting-edge projects that blur the lines between the virtual and the tangible.</p>
 
             <div class="row text-left">
                 <div class="col-md-4">
+                    <iframe class="card-img-top w-100" src="https://www.youtube.com/embed/F75UqxKW7pI" title="light intensity sensor with LCD display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <!-- <video  controls="controls">
+                            <iframe width="716" height="403" src="https://www.youtube.com/embed/F75UqxKW7pI" title="light intensity sensor with LCD display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                            <!-- <source src="assets\video and photos\VID_20221027_172155.mp4" type="video/mp4" /> -->
+                           <!-- </video>  -->
+                        <!-- <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100"> -->
                         <div class="card-body">
-                            <h5 class="card-title">Designe for Everyone</h5>
+                            <h5 class="card-title">Light Intensity measurement with LCD display</h5>
                             <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
+                            <p>In my Light Intensity Measurement project, I've employed an Arduino board and a light sensor to accurately measure ambient light levels. <span id="dots1" class="dots">...</span><span id="more1" class="read">The real-time data is elegantly presented on an LCD display, making it user-friendly and practical.</span></p>
+                            <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction1()" id="myBtn1" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <iframe  class="card-img-top w-100" src="https://www.youtube.com/embed/gTd0mGauQ6g" title="light sensor with LED display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100"> -->
                         <div class="card-body">
-                            <h5 class="card-title">Web Layouts</h5>
+                            <h5 class="card-title">Light Intensity Sensor using LED display</h5>
                             <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
+                            
+                           <p> My Arduino Light Sensor project uses an Arduino board and a light-dependent resistor (LDR) to detect and display ambient light levels LED display.<span id="dots2" class="dots">...</span><span id="more2" class="read"> This project demonstrates my skills in Arduino programming, sensor integration, and creative technology design.</span> </p>
+                           <button onclick="myFunction2()" id="myBtn2" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <iframe class="card-img-top w-100" src="https://www.youtube.com/embed/R-yjKNF8IMQ" title="distance measurement with utrasonic sensor and LCD display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Bootstrap Framework</h5>
+                            <h5 class="card-title">Distance measurement with utrasonic sensor and LCD display</h5>
                             <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
+                            <p>My Distance Measurement project utilizes an Arduino and an ultrasonic sensor to precisely measure distances in real-time.<span id="dots3" class="dots">...</span><span id="more3" class="read"> The project showcases my proficiency in sensor interfacing and data presentation, as it displays distance measurements on an LCD screen. Its demonstrating my skills in hardware integration and information visualization.</span></p>
+                            <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction3()" id="myBtn3" class="myBtn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-4">
+                    <iframe class="card-img-top w-100" src="https://www.youtube.com/embed/W6dzd71l6s4" title="remote controlled car" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card border mb-4">
+                        <!-- <video  controls="controls">
+                            <iframe width="716" height="403" src="https://www.youtube.com/embed/F75UqxKW7pI" title="light intensity sensor with LCD display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                            <!-- <source src="assets\video and photos\VID_20221027_172155.mp4" type="video/mp4" /> -->
+                           <!-- </video>  -->
+                        <!-- <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">remote controlled car</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
+                            </div>
+                            <p>My Remote Controlled Car project is a testament to my passion for tinkering with technology. I've transformed a standard RC car into a customizable and versatile machine.<span id="dots4" class="dots" >...</span><span id="more4" class="read"> By integrating an Arduino board and a wireless controller, I've given it a new dimension of control and interactivity. Whether it's maneuvering through obstacles or adding custom features like LED lights and camera systems, this project demonstrates my skills in electronics, coding, and creative engineering.</span> </p>
+                            <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction4()" id="myBtn4" class="myBtn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <iframe class="card-img-top w-100" src="https://www.youtube.com/embed/nBZVZoKchl8" title="controlling LED using a remote" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">LED Control with Remote Project</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
+                            </div>
+                            <p>My LED Control with Remote project highlights the fusion of simplicity and innovation. Using an Arduino board and an infrared (IR) receiver, I've crafted a system that allows me to control LEDs wirelessly with a remote control.<span id="dots5"  class="dots">...</span><span id="more5" class="read"> This project showcases my proficiency in microcontroller programming and circuitry, as I've created an interactive and visually captivating experience. The ability to customize LED patterns and colors using a remote control adds an element of fun and practicality.</span> </p>
+                            <!-- <a href="myFunction5()">Read More..</a> -->
+                            <button onclick="myFunction5()" id="myBtn5" class="myBtn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <iframe  class="card-img-top w-100" src="https://www.youtube.com/embed/9FSbf0NHahI" title="Automatic irrigation system with arduino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Automatic irrigation system with arduino</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Elijah</a>
+                                <!-- <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a> -->
+                            </div>
+                            <p>My Automatic Irrigation System with Arduino project is a solution that combines technology and sustainability.<span id="dots6" class="dots">...</span><span id="more6" class="read"> By employing an Arduino microcontroller, soil moisture sensors, and water pumps, I've created an automated watering system that ensures plants receive just the right amount of moisture, reducing water waste and promoting healthy growth.</span></p>
+                            <!-- <a href="javascript:void(0)">Read More..</a> -->
+                            <button onclick="myFunction6()" id="myBtn6" class="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -480,7 +560,7 @@
             </div>
         </div>  
         <div id="map" >
-            <div style="background-color: rgb(216, 107, 107);height: 100%;"></div>
+            <div style="background-color: rgba(218, 75, 23, 0.76);height: 100%;"></div>
             <!-- <img src="assets/my images/portfolio/footer-back-img-5.jpg" alt="" style="height: 100vh;width: 99vw;"> -->
             <!-- <iframe src="https://snazzymaps.com/embed/61257"></iframe> -->
         </div>      
@@ -515,6 +595,7 @@
 
     <!-- steller js -->
     <script src="assets/js/eliki.js"></script>
+    <script src="assets\js\readMore.js"></script>
 
 </body>
 </html>
